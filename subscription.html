@@ -103,10 +103,11 @@
             <input type="name" class="form-control" id="inputEmail4">
           </div>
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Email</label>
-            <input type="Email" class="form-control" id="inputPassword4">
+            <label for="inputMail" class="form-label">Email</label>
+            <input type="text" class="form-control" id="inputMail">
                         <br>
-            <button class="btn btn-secondary clickme">verify your email</button>
+            <button class="btn btn-secondary clickme" onclick="return validate1()">verify your e-mail</button>
+            <div id="phone_error" class="hidden">Please enter a valid Email address</div>
           </div>
           <div class="col-12">
             <label for="inputAddress" class="form-label">Address</label>
