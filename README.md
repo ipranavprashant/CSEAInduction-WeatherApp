@@ -11,4 +11,6 @@ The app has been created using HTML,CSS,JavaScript,Bootstrap and Fetch API(weath
 -You get a pop up incase you write an invalid city name.
 -Click on to the options tab, this will enable you the dropdown menu, wherein you can go to the subscription form and contact page.
 -The subscription form includes the details of the subscription and a form collecting the user details.
+-The Valid email id must belong to NIT Calicut, i.e; it must have a domain of nitc.ac.in
+-A valid Phone number must have a minimum of 10 and maximum of 12 digits(considering the country code).
 -On successful submission you will be popped up with a validation successful message.
