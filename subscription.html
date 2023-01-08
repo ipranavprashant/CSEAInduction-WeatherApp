@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subsription</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body id="haha1">
+  <header><h1>Subscriptions</h1></header>
+  <!-- <div class="subsnav">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><button class="btn btn-primary">Home</button></a>
+    </div>
+  </nav>
+</div> -->
+  <!-- <h1 class="heading"><u>Subscriptions we offer!</u></h1> -->
+  <!-- <br><br> -->
+  <div class="container1">
+    <div class="card-group">
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title"><u>Daily</u></h5>
+          <p class="card-text">
+            <ul><li>Provides access to real-time weather updates on a daily basis.</li>
+            <li>Ideal for people who need to stay up-to-date on the weather for their daily activities, such as commuting or outdoor exercise.</li>
+            <li>A convenient option for those who want the most current weather information at their fingertips.</li>
+            <li>Allows users to get the most out of the app's features and updates by using them on a daily basis.</li>
+            <li>at the rate of 2$/Day</li>
+            </ul>
+            
+           
+            </p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title"><u>Weekly</u></h5>
+          <p class="card-text"><ul>
+            <li>Perfect for people who are just looking to check the weather on a short-term basis, such as while on vacation.</li>
+            <li>A cost-effective option for those who don't need weather updates on a daily basis.</li>
+            <li>Allows users to try out the app and see if it meets their needs before committing to a longer subscription.</li>
+            <li>at the rate of 5$/Week</li>
+          </ul>
+            
+            </p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title"><u>Monthly</u></h5>
+          <p class="card-text"><ul>
+            <li>Provides regular weather updates without the long-term commitment of a yearly subscription.</li>
+            <li>A good option for those who need to stay up-to-date on the weather for work or personal reasons, but don't need daily updates.</li>
+            <li>Can be a cost-effective option for infrequent weather checkers.</li>
+            <li>at the rate of 10$/Week</li>
+          </ul>
+            </p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+      <div class="card">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title"><u>Yearly</u></h5>
+          <p class="card-text"><ul>
+            <li>The most cost-effective option for heavy weather app users.</li>
+            <li>Provides access to all the features and updates of the app for an entire year.</li>
+            <li>A great choice for people who rely on accurate weather information for their daily activities or for long-term planning purposes.</li>
+            <li>at the rate of 49$/Day</li>
+          </ul>
+          </p>
+          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <br><br> -->
+
+
+  <header><h1>Enter your details</h1></header><br>
+  <!-- <h1 class="details"><u>Enter your details</u></h1> -->
+  <!-- <br><br><br> -->
+  <div id="paymentGateway">
+    <div class="card" style="width: 50rem;">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+
+        <form class="row g-3" id="myform" onsubmit="return validate()" method="'POST">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Name</label>
+            <input type="name" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Email</label>
+            <input type="Email" class="form-control" id="inputPassword4">
+                        <br>
+            <button class="btn btn-secondary clickme">verify your email</button>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress">
+          </div>
+          <!-- <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2">
+                </div> -->
+          <div class="col-md-6">
+            <label for="inputNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="inputNumber">
+                        <br>
+            <button class="btn btn-secondary clickme" onclick="return validate()">verify your number</button>
+            <div id="phone_error" class="hidden">Please enter a valid phone number</div>
+          </div>
+          <div class="col-md-4">
+            <label for="inputubscription" class="form-label">Subscription</label>
+            <select id="inputSubscription" class="form-select">
+              <option selected>Choose...</option>
+              <option>Daily</option>
+              <option>Weekly</option>
+              <option>Monthly</option>
+              <option>Yearly</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Alerts via Sms
+              </label>
+            </div>
+          </div>
+          <div id="bottomButton">
+            <button type="submit" class="btn btn-primary align-content-center">Submit</button>
+          </div>
+        </form>
+        <a href="index.html" class="card-link">Home</a>
+        <a href="subscription.html" class="card-link left">Back to top</a>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- <a href="details.html"><button>Submit</button></a> -->
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+<footer class="footer">
+  <p>Copyright©2023</p>
+</footer>
+
+</html>

@@ -1,0 +1,63 @@
+.heading {
+    text-align: center;
+}
+
+header {
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details {
+    text-align: center;
+}
+
+.master {
+    background-image: url('./photos/Blue\ Simple\ Cloud\ Watercolor\ Note\ Card.png');
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+#bottomButton {
+    display: flex;
+    justify-content: center;
+}
+
+#paymentGateway {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    /* background-color: mediumaquamarine; */
+    background-color: grey
+}
+
+#haha {
+    background-color: gainsboro;
+}
+
+#haha1 {
+    background-color: gainsboro;
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+#phone_error {
+    color: red;
+}
+
+.hidden {
+    visibility: hidden;
+}
