@@ -127,11 +127,11 @@ function validate() {
 
 
 function validateMail(input_str) {
-	var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[nitc]+(?:\.[ac]+)(?:\.[in]+)*$/;
+	var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[nitc]+(?:\.[ac]+)+(?:\.[in]+)*$/;
 	return re.test(input_str);
 }
 
-function validate() {
+function validate1() {
 	var mail = document.getElementById("inputMail").value;
 	if (validateMail(mail)) {
 		document.getElementById("phone_error").classList.add('hidden');
