@@ -124,6 +124,25 @@ function validate() {
 		e.preventDefault();
 	}
 }
+
+
+function validateMail(input_str) {
+	var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[nitc]+(?:\.[ac]+)(?:\.[in]+)*$/;
+	return re.test(input_str);
+}
+
+function validate() {
+	var mail = document.getElementById("inputMail").value;
+	if (validateMail(mail)) {
+		document.getElementById("phone_error").classList.add('hidden');
+		alert("Validation Success");
+		e.preventDefault();
+	}
+	else {
+		document.getElementById("phone_error").classList.remove('hidden');
+		e.preventDefault();
+	}
+}
 // e.preventDefault();
 // .fail(() => {
 // 	alert("City doesn't Exist!!");
